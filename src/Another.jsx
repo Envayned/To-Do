@@ -6,8 +6,6 @@ export default function Another(props){
         <div>
             Welcome, {props.name}
         </div>
-        
-
     )
 
 }
