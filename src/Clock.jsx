@@ -17,18 +17,19 @@ class ClockComponent extends Component{
       date: new Date()
     });
   }
+
   componentWillUnmount(){
     clearInterval(this.interval);
   }
+
   render(){
     return(
       <div className="p-6">
         <h1>Hello, world!</h1>
-        <h2 className="text-blue-400 font-serif">It is {this.state.date.toLocaleTimeString()}.</h2>
+        <h2 className="text-green-400 font-serif font-bold">It is {this.state.date.toLocaleTimeString()}.</h2>
       </div>
     );
   }
-  
 }
 export default ClockComponent;
 
